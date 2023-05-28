@@ -11,7 +11,7 @@ var (
 
 func Connect() {
 
-	dsn := "root:davyjones24@tcp(localhost:5000)/gobookstore?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:password@tcp(localhost:5000)/gobookstore?charset=utf8mb4&parseTime=True&loc=Local"
 	d, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 
 	if err != nil {
